@@ -1,0 +1,11 @@
+n_features,n_samples,class_imbalance,n_skew_pos,n_skew_neg,top10_models
+8,768,0.34895833333333337,3,1,"['RandomForest6', 'XGBoost5', 'RandomForest8', 'XGBoost8', 'XGBoost2', 'RandomForest1', 'RandomForest4', 'XGBoost3', 'XGBoost6', 'RandomForest2']"
+37,1043,0.12176414189837009,34,0,"['CatBoost4', 'CatBoost2', 'CatBoost5', 'CatBoost6', 'XGBoost10', 'CatBoost8', 'CatBoost9', 'CatBoost10', 'CatBoost3', 'XGBoost9']"
+20,540,0.08518518518518514,0,0,"['CatBoost3', 'RandomForest6', 'RandomForest4', 'CatBoost1', 'CatBoost6', 'CatBoost7', 'CatBoost8', 'CatBoost10', 'CatBoost4', 'CatBoost9']"
+57,4601,0.3940447728754618,57,0,"['XGBoost4', 'CatBoost8', 'CatBoost4', 'XGBoost2', 'CatBoost3', 'CatBoost1', 'CatBoost6', 'CatBoost10', 'CatBoost5', 'XGBoost8']"
+21,1109,0.06943192064923355,21,0,"['CatBoost4', 'CatBoost6', 'CatBoost3', 'CatBoost2', 'CatBoost8', 'CatBoost1', 'CatBoost5', 'CatBoost9', 'CatBoost10', 'XGBoost10']"
+15,690,0.4449275362318841,6,0,"['RandomForest3', 'XGBoost8', 'XGBoost6', 'XGBoost3', 'XGBoost4', 'RandomForest6', 'RandomForest2', 'RandomForest1', 'XGBoost2', 'RandomForest7']"
+21,10885,0.1934772622875517,21,0,"['CatBoost9', 'CatBoost5', 'XGBoost10', 'XGBoost7', 'CatBoost2', 'CatBoost10', 'XGBoost3', 'CatBoost3', 'CatBoost8', 'XGBoost9']"
+14,4562,0.24813678211310827,3,0,"['CatBoost5', 'CatBoost6', 'CatBoost3', 'CatBoost4', 'XGBoost7', 'RandomForest8', 'CatBoost9', 'CatBoost8', 'CatBoost2', 'XGBoost4']"
+5,5404,0.2934863064396743,2,0,"['RandomForest1', 'RandomForest6', 'CatBoost8', 'RandomForest4', 'CatBoost10', 'CatBoost2', 'CatBoost3', 'CatBoost5', 'RandomForest8', 'CatBoost6']"
+72,2534,0.06314127861089187,10,1,"['XGBoost6', 'XGBoost4', 'XGBoost10', 'XGBoost9', 'XGBoost7', 'XGBoost3', 'XGBoost2', 'XGBoost8', 'CatBoost2', 'XGBoost5']"
