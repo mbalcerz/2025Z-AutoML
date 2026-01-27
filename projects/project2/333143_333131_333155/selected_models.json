@@ -1,0 +1,570 @@
+[
+    {
+        "name": "xgboost_1",
+        "class": "XGBClassifier",
+        "params": {
+            "booster": "gbtree",
+            "n_estimators": 355,
+            "learning_rate": 0.0324106605480031,
+            "subsample": 0.867935555521399,
+            "max_depth": 8,
+            "min_child_weight": 2.18921599683768,
+            "colsample_bytree": 0.71023326292634,
+            "colsample_bylevel": 0.690302629210055,
+            "missing": 0,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "xgboost_2",
+        "class": "XGBClassifier",
+        "params": {
+            "booster": "gbtree",
+            "n_estimators": 184,
+            "learning_rate": 0.0617450318338613,
+            "subsample": 0.683306726277806,
+            "max_depth": 7,
+            "min_child_weight": 2.56567480883493,
+            "colsample_bytree": 0.744482032582164,
+            "colsample_bylevel": 0.859297586232424,
+            "missing": 0,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "xgboost_3",
+        "class": "XGBClassifier",
+        "params": {
+            "booster": "gbtree",
+            "n_estimators": 282,
+            "learning_rate": 0.0962582983602717,
+            "subsample": 0.966606075176969,
+            "max_depth": 14,
+            "min_child_weight": 1.07724400296566,
+            "colsample_bytree": 0.952940160222352,
+            "colsample_bylevel": 0.354075000621378,
+            "missing": 0,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "xgboost_4",
+        "class": "XGBClassifier",
+        "params": {
+            "booster": "gbtree",
+            "n_estimators": 756,
+            "learning_rate": 0.0403232295575335,
+            "subsample": 0.777657110360451,
+            "max_depth": 10,
+            "min_child_weight": 1.92624185774548,
+            "colsample_bytree": 0.413046978227794,
+            "colsample_bylevel": 0.892870987206698,
+            "missing": 0,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "xgboost_5",
+        "class": "XGBClassifier",
+        "params": {
+            "booster": "gbtree",
+            "n_estimators": 109,
+            "learning_rate": 0.0699401344515662,
+            "subsample": 0.867133233579807,
+            "max_depth": 14,
+            "min_child_weight": 1.39082881585674,
+            "colsample_bytree": 0.565902150422335,
+            "colsample_bylevel": 0.621011920087039,
+            "missing": 0,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "xgboost_6",
+        "class": "XGBClassifier",
+        "params": {
+            "booster": "gbtree",
+            "n_estimators": 268,
+            "learning_rate": 0.057311228047118,
+            "subsample": 0.693450994323939,
+            "max_depth": 14,
+            "min_child_weight": 1.32540148414612,
+            "colsample_bytree": 0.373665936477482,
+            "colsample_bylevel": 0.297132815979421,
+            "missing": 0,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "xgboost_7",
+        "class": "XGBClassifier",
+        "params": {
+            "booster": "gbtree",
+            "n_estimators": 757,
+            "learning_rate": 0.0816841850176899,
+            "subsample": 0.92063701513689,
+            "max_depth": 6,
+            "min_child_weight": 1.01113620011384,
+            "colsample_bytree": 0.771420868672431,
+            "colsample_bylevel": 0.232633330486715,
+            "missing": 0,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "xgboost_8",
+        "class": "XGBClassifier",
+        "params": {
+            "booster": "gbtree",
+            "n_estimators": 807,
+            "learning_rate": 0.123695466754602,
+            "subsample": 0.978877916000783,
+            "max_depth": 13,
+            "min_child_weight": 4.54843817298641,
+            "colsample_bytree": 0.52648001704365,
+            "colsample_bylevel": 0.946952299401164,
+            "missing": 0,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "xgboost_9",
+        "class": "XGBClassifier",
+        "params": {
+            "booster": "gbtree",
+            "n_estimators": 554,
+            "learning_rate": 0.17265919088254,
+            "subsample": 0.965862372424453,
+            "max_depth": 15,
+            "min_child_weight": 2.06116429078194,
+            "colsample_bytree": 0.23376930039376,
+            "colsample_bylevel": 0.655630644224584,
+            "missing": 0,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "xgboost_10",
+        "class": "XGBClassifier",
+        "params": {
+            "booster": "gbtree",
+            "n_estimators": 421,
+            "learning_rate": 0.0502218791736965,
+            "subsample": 0.947396234492771,
+            "max_depth": 13,
+            "min_child_weight": 2.33641923250691,
+            "colsample_bytree": 0.956590805947781,
+            "colsample_bylevel": 0.864967179112136,
+            "missing": 0,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "randomForest_1",
+        "class": "RandomForestClassifier",
+        "params": {
+            "n_estimators": 8294,
+            "bootstrap": false,
+            "min_samples_leaf": 1,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "randomForest_2",
+        "class": "RandomForestClassifier",
+        "params": {
+            "n_estimators": 7649,
+            "bootstrap": false,
+            "min_samples_leaf": 1,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "randomForest_3",
+        "class": "RandomForestClassifier",
+        "params": {
+            "n_estimators": 788,
+            "bootstrap": false,
+            "min_samples_leaf": 1,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "randomForest_4",
+        "class": "RandomForestClassifier",
+        "params": {
+            "n_estimators": 8822,
+            "bootstrap": false,
+            "min_samples_leaf": 1,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "randomForest_5",
+        "class": "RandomForestClassifier",
+        "params": {
+            "n_estimators": 897,
+            "bootstrap": false,
+            "min_samples_leaf": 1,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "randomForest_6",
+        "class": "RandomForestClassifier",
+        "params": {
+            "n_estimators": 4669,
+            "bootstrap": false,
+            "min_samples_leaf": 3,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "randomForest_7",
+        "class": "RandomForestClassifier",
+        "params": {
+            "n_estimators": 4736,
+            "bootstrap": true,
+            "min_samples_leaf": 1,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "randomForest_8",
+        "class": "RandomForestClassifier",
+        "params": {
+            "n_estimators": 3009,
+            "bootstrap": false,
+            "min_samples_leaf": 3,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "randomForest_9",
+        "class": "RandomForestClassifier",
+        "params": {
+            "n_estimators": 7463,
+            "bootstrap": false,
+            "min_samples_leaf": 1,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "randomForest_10",
+        "class": "RandomForestClassifier",
+        "params": {
+            "n_estimators": 735,
+            "bootstrap": false,
+            "min_samples_leaf": 4,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "catboost_1",
+        "class": "CatBoostClassifier",
+        "params": {
+            "iterations": 278,
+            "depth": 9,
+            "l2_leaf_reg": 1.447357084503,
+            "bagging_temperature": 1.60259917385523,
+            "learning_rate": 0.729352824874347,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "catboost_2",
+        "class": "CatBoostClassifier",
+        "params": {
+            "iterations": 6455,
+            "depth": 10,
+            "l2_leaf_reg": 3.452451561716,
+            "bagging_temperature": 2.40360875755343,
+            "learning_rate": 1.16579669611457,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "catboost_3",
+        "class": "CatBoostClassifier",
+        "params": {
+            "iterations": 152,
+            "depth": 10,
+            "l2_leaf_reg": 1.42088515770867,
+            "bagging_temperature": 1.69210894016358,
+            "learning_rate": 0.0364785410537316,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "catboost_4",
+        "class": "CatBoostClassifier",
+        "params": {
+            "iterations": 6333,
+            "depth": 8,
+            "l2_leaf_reg": 8.53008579899765,
+            "bagging_temperature": 1.31827526950071,
+            "learning_rate": 0.0060786451392858,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "catboost_5",
+        "class": "CatBoostClassifier",
+        "params": {
+            "iterations": 9990,
+            "depth": 9,
+            "l2_leaf_reg": 0.876350881810458,
+            "bagging_temperature": 2.37471708200722,
+            "learning_rate": 0.0017843059083595,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "catboost_6",
+        "class": "CatBoostClassifier",
+        "params": {
+            "iterations": 2588,
+            "depth": 8,
+            "l2_leaf_reg": 0.312112614211974,
+            "bagging_temperature": 1.4387945813755,
+            "learning_rate": 0.042373632640277,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "catboost_7",
+        "class": "CatBoostClassifier",
+        "params": {
+            "iterations": 3730,
+            "depth": 8,
+            "l2_leaf_reg": 2.25318100174323,
+            "bagging_temperature": 1.19299834018768,
+            "learning_rate": 0.0010063483403373,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "catboost_8",
+        "class": "CatBoostClassifier",
+        "params": {
+            "iterations": 6074,
+            "depth": 9,
+            "l2_leaf_reg": 8.53435336425714,
+            "bagging_temperature": 1.52239819990943,
+            "learning_rate": 0.0674172339804864,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "catboost_9",
+        "class": "CatBoostClassifier",
+        "params": {
+            "iterations": 183,
+            "depth": 10,
+            "l2_leaf_reg": 1.78848795271474,
+            "bagging_temperature": 0.300081568807281,
+            "learning_rate": 0.0129406526615418,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "catboost_10",
+        "class": "CatBoostClassifier",
+        "params": {
+            "iterations": 4702,
+            "depth": 9,
+            "l2_leaf_reg": 6.6928430091469,
+            "bagging_temperature": 2.84672451599158,
+            "learning_rate": 0.0478940768192353,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "gbm_1",
+        "class": "LGBMClassifier",
+        "params": {
+            "n_estimators": 9751,
+            "max_depth": 5,
+            "min_samples_leaf": 3,
+            "learning_rate": 0.0036416000430948,
+            "subsample": 0.735055895708501,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "gbm_2",
+        "class": "LGBMClassifier",
+        "params": {
+            "n_estimators": 8039,
+            "max_depth": 5,
+            "min_samples_leaf": 3,
+            "learning_rate": 0.0055493718844742,
+            "subsample": 0.814661961793899,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "gbm_3",
+        "class": "LGBMClassifier",
+        "params": {
+            "n_estimators": 1147,
+            "max_depth": 5,
+            "min_samples_leaf": 6,
+            "learning_rate": 0.0151692954492146,
+            "subsample": 0.927830309607089,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "gbm_4",
+        "class": "LGBMClassifier",
+        "params": {
+            "n_estimators": 5385,
+            "max_depth": 5,
+            "min_samples_leaf": 4,
+            "learning_rate": 0.0018683940294369,
+            "subsample": 0.832181800343096,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "glmnet_1",
+        "class": "LogisticRegression",
+        "params": {
+            "l1_ratio": 0.201800923096016,
+            "penalty": "elasticnet",
+            "solver": "saga",
+            "C": 0.5958145831957224
+        }
+    },
+    {
+        "name": "glmnet_2",
+        "class": "LogisticRegression",
+        "params": {
+            "l1_ratio": 0.135230499086902,
+            "penalty": "elasticnet",
+            "solver": "saga",
+            "C": 0.3731223646290751
+        }
+    },
+    {
+        "name": "glmnet_3",
+        "class": "LogisticRegression",
+        "params": {
+            "l1_ratio": 0.731315477285534,
+            "penalty": "elasticnet",
+            "solver": "saga",
+            "C": 2.0901567825246303
+        }
+    },
+    {
+        "name": "glmnet_4",
+        "class": "LogisticRegression",
+        "params": {
+            "l1_ratio": 0.292219521244988,
+            "penalty": "elasticnet",
+            "solver": "saga",
+            "C": 0.8128925804789143
+        }
+    },
+    {
+        "name": "glmnet_5",
+        "class": "LogisticRegression",
+        "params": {
+            "l1_ratio": 0.824679406359792,
+            "penalty": "elasticnet",
+            "solver": "saga",
+            "C": 2.897640463173365
+        }
+    },
+    {
+        "name": "kknn_1",
+        "class": "KNeighborsClassifier",
+        "params": {
+            "n_neighbors": 30,
+            "p": 2
+        }
+    },
+    {
+        "name": "kknn_2",
+        "class": "KNeighborsClassifier",
+        "params": {
+            "n_neighbors": 30,
+            "p": 2
+        }
+    },
+    {
+        "name": "kknn_3",
+        "class": "KNeighborsClassifier",
+        "params": {
+            "n_neighbors": 30,
+            "p": 2
+        }
+    },
+    {
+        "name": "kknn_4",
+        "class": "KNeighborsClassifier",
+        "params": {
+            "n_neighbors": 29,
+            "p": 2
+        }
+    },
+    {
+        "name": "kknn_5",
+        "class": "KNeighborsClassifier",
+        "params": {
+            "n_neighbors": 29,
+            "p": 2
+        }
+    },
+    {
+        "name": "ranger_1",
+        "class": "RandomForestClassifier",
+        "params": {
+            "n_estimators": 5097,
+            "min_samples_leaf": 2,
+            "bootstrap": false,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "ranger_2",
+        "class": "RandomForestClassifier",
+        "params": {
+            "n_estimators": 2279,
+            "min_samples_leaf": 4,
+            "bootstrap": false,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "ranger_3",
+        "class": "RandomForestClassifier",
+        "params": {
+            "n_estimators": 6908,
+            "min_samples_leaf": 1,
+            "bootstrap": false,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "ranger_4",
+        "class": "RandomForestClassifier",
+        "params": {
+            "n_estimators": 3648,
+            "min_samples_leaf": 2,
+            "bootstrap": false,
+            "random_state": 42
+        }
+    },
+    {
+        "name": "ranger_5",
+        "class": "RandomForestClassifier",
+        "params": {
+            "n_estimators": 3738,
+            "min_samples_leaf": 3,
+            "bootstrap": false,
+            "random_state": 42
+        }
+    }
+]
