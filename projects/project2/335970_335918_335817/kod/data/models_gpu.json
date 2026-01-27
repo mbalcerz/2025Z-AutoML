@@ -1,0 +1,557 @@
+[
+  {
+    "name": "catboost_tabarena_balanced",
+    "class": "catboost.CatBoostClassifier",
+    "params": {
+      "learning_rate": 0.03,
+      "depth": 6,
+      "grow_policy": "SymmetricTree",
+      "l2_leaf_reg": 3.0,
+      "subsample": 0.85,
+      "bootstrap_type": "Bernoulli",
+      "boosting_type": "Plain",
+      "max_bin": 254,
+      "one_hot_max_size": 20,
+      "leaf_estimation_iterations": 5,
+      "max_ctr_complexity": 3,
+      "model_size_reg": 0.5,
+      "verbose": 0,
+      "allow_writing_files": false,
+      "auto_class_weights": "Balanced",
+      "task_type": "GPU",
+      "random_state": 42
+    }
+  },
+  {
+    "name": "catboost_tabarena_deep",
+    "class": "catboost.CatBoostClassifier",
+    "params": {
+      "learning_rate": 0.01,
+      "depth": 8,
+      "grow_policy": "Depthwise",
+      "l2_leaf_reg": 1.0,
+      "subsample": 0.8,
+      "bootstrap_type": "Bernoulli",
+      "boosting_type": "Plain",
+      "max_bin": 254,
+      "one_hot_max_size": 50,
+      "leaf_estimation_iterations": 10,
+      "max_ctr_complexity": 4,
+      "model_size_reg": 1.0,
+      "verbose": 0,
+      "allow_writing_files": false,
+      "auto_class_weights": "Balanced",
+      "task_type": "GPU",
+      "random_state": 42
+    }
+  },
+  {
+    "name": "catboost_tabarena_fast",
+    "class": "catboost.CatBoostClassifier",
+    "params": {
+      "learning_rate": 0.1,
+      "depth": 4,
+      "grow_policy": "SymmetricTree",
+      "l2_leaf_reg": 5.0,
+      "subsample": 0.95,
+      "bootstrap_type": "Bernoulli",
+      "boosting_type": "Plain",
+      "max_bin": 254,
+      "one_hot_max_size": 10,
+      "leaf_estimation_iterations": 1,
+      "max_ctr_complexity": 2,
+      "model_size_reg": 0.1,
+      "verbose": 0,
+      "allow_writing_files": false,
+      "auto_class_weights": "Balanced",
+      "task_type": "GPU",
+      "random_state": 42
+    }
+  },
+  {
+    "name": "xt_tabarena_default",
+    "class": "sklearn.ensemble.ExtraTreesClassifier",
+    "params": {
+      "n_estimators": 50,
+      "max_features": "sqrt",
+      "min_samples_split": 2,
+      "bootstrap": false,
+      "min_impurity_decrease": 0.0,
+      "n_jobs": -1,
+      "class_weight": "balanced",
+      "random_state": 42
+    }
+  },
+  {
+    "name": "xt_tabarena_heavy",
+    "class": "sklearn.ensemble.ExtraTreesClassifier",
+    "params": {
+      "n_estimators": 50,
+      "max_features": 1.0,
+      "min_samples_split": 16,
+      "bootstrap": false,
+      "min_impurity_decrease": 0.0001,
+      "n_jobs": -1,
+      "class_weight": "balanced",
+      "random_state": 42
+    }
+  },
+  {
+    "name": "xt_tabarena_conservative",
+    "class": "sklearn.ensemble.ExtraTreesClassifier",
+    "params": {
+      "n_estimators": 100,
+      "max_features": 0.5,
+      "min_samples_split": 32,
+      "bootstrap": false,
+      "min_impurity_decrease": 0.001,
+      "n_jobs": -1,
+      "class_weight": "balanced",
+      "random_state": 42
+    }
+  },
+  {
+    "name": "LGBM_TD_CLASS_better_defaults",
+    "class": "lightgbm.LGBMClassifier",
+    "params": {
+      "n_estimators": 1000,
+      "learning_rate": 0.04,
+      "subsample": 0.75,
+      "colsample_bytree": 1.0,
+      "device": "gpu",
+      "num_leaves": 50,
+      "bagging_freq": 1,
+      "min_data_in_leaf": 40,
+      "min_sum_hessian_in_leaf": 1e-7,
+      "max_bin": 255,
+      "verbose": -1,
+      "is_unbalance": true,
+      "random_state": 42
+    }
+  },
+  {
+    "name": "LGBM_TD_REG",
+    "class": "lightgbm.LGBMClassifier",
+    "params": {
+      "n_estimators": 1000,
+      "learning_rate": 0.05,
+      "subsample": 0.7,
+      "colsample_bytree": 1.0,
+      "num_leaves": 100,
+      "max_bin": 255,
+      "bagging_freq": 1,
+      "min_data_in_leaf": 3,
+      "min_sum_hessian_in_leaf": 1e-7,
+      "verbose": -1,
+      "is_unbalance": true,
+      "device": "gpu",
+      "random_state": 42
+    }
+  },
+  {
+    "name": "LGBM_GOSS",
+    "class": "lightgbm.LGBMClassifier",
+    "params": {
+      "boosting_type": "goss",
+      "n_estimators": 1000,
+      "learning_rate": 0.05,
+      "num_leaves": 32,
+      "min_child_samples": 20,
+      "colsample_bytree": 0.8,
+      "max_depth": 8,
+      "verbose": -1,
+      "is_unbalance": true,
+      "device": "gpu",
+      "random_state": 42
+    }
+  },
+  {
+    "name": "LGBM_ExtraTrees",
+    "class": "lightgbm.LGBMClassifier",
+    "params": {
+      "boosting_type": "gbdt",
+      "extra_trees": true,
+      "n_estimators": 1000,
+      "learning_rate": 0.03,
+      "num_leaves": 64,
+      "min_child_samples": 20,
+      "colsample_bytree": 0.7,
+      "subsample": 0.7,
+      "subsample_freq": 1,
+      "path_smooth": 1.0,
+      "verbose": -1,
+      "is_unbalance": true,
+      "device": "gpu",
+      "random_state": 42
+    }
+  },
+  {
+    "name": "XGB_TD_CLASS",
+    "class": "xgboost.XGBClassifier",
+    "params": {
+      "n_estimators": 1000,
+      "learning_rate": 0.08,
+      "min_child_weight": 5e-6,
+      "reg_lambda": 0.0,
+      "max_depth": 6,
+      "subsample": 0.65,
+      "tree_method": "hist",
+      "device": "cuda",
+      "max_bin": 256,
+      "scale_pos_weight": 1.16,
+      "random_state": 42
+    }
+  },
+  {
+    "name": "XGB_TD_REG",
+    "class": "xgboost.XGBClassifier",
+    "params": {
+      "n_estimators": 1000,
+      "max_depth": 9,
+      "tree_method": "hist",
+      "max_bin": 256,
+      "learning_rate": 0.05,
+      "device": "cuda",
+      "min_child_weight": 2.0,
+      "reg_lambda": 0.0,
+      "subsample": 0.7,
+      "scale_pos_weight": 1.16,
+      "random_state": 42
+    }
+  },
+  {
+    "name": "XGB_PBB_CLASS",
+    "class": "xgboost.XGBClassifier",
+    "params": {
+      "n_estimators": 4168,
+      "learning_rate": 0.018,
+      "min_child_weight": 2.06,
+      "max_depth": 13,
+      "reg_lambda": 0.982,
+      "reg_alpha": 1.113,
+      "subsample": 0.839,
+      "device": "cuda",
+      "colsample_bytree": 0.752,
+      "tree_method": "hist",
+      "scale_pos_weight": 1.16,
+      "random_state": 42
+    }
+  },
+  {
+    "name": "CB_TD_CLASS",
+    "class": "catboost.CatBoostClassifier",
+    "params": {
+      "n_estimators": 1000,
+      "learning_rate": 0.08,
+      "l2_leaf_reg": 1e-5,
+      "boosting_type": "Plain",
+      "bootstrap_type": "Bernoulli",
+      "subsample": 0.9,
+      "max_depth": 7,
+      "device": "cuda",
+      "task_type": "GPU",
+      "random_strength": 0.8,
+      "one_hot_max_size": 15,
+      "leaf_estimation_iterations": 1,
+      "max_bin": 254,
+      "verbose": 0,
+      "allow_writing_files": false,
+      "auto_class_weights": "Balanced",
+      "random_state": 42
+    }
+  },
+  {
+    "name": "CB_TD_REG",
+    "class": "catboost.CatBoostClassifier",
+    "params": {
+      "n_estimators": 1000,
+      "learning_rate": 0.09,
+      "l2_leaf_reg": 1e-5,
+      "boosting_type": "Plain",
+      "bootstrap_type": "Bernoulli",
+      "subsample": 0.9,
+      "max_depth": 9,
+      "random_strength": 0.0,
+      "max_bin": 254,
+      "one_hot_max_size": 20,
+      "leaf_estimation_iterations": 20,
+      "verbose": 0,
+      "allow_writing_files": false,
+      "auto_class_weights": "Balanced",
+      "task_type": "GPU",
+      "random_state": 42
+    }
+  },
+  {
+    "name": "KKNN_1952_CLASS",
+    "class": "sklearn.neighbors.KNeighborsClassifier",
+    "params": {
+      "n_neighbors": 30,
+      "p": 2,
+      "weights": "distance"
+    }
+  },
+  {
+    "name": "RANGER_1952_CLASS",
+    "class": "sklearn.ensemble.ExtraTreesClassifier",
+    "params": {
+      "n_estimators": 674,
+      "min_samples_leaf": 1,
+      "bootstrap": false,
+      "criterion": "entropy",
+      "class_weight": "balanced",
+      "random_state": 42
+    }
+  },
+  {
+    "name": "RANGER_1954_CLASS",
+    "class": "sklearn.ensemble.ExtraTreesClassifier",
+    "params": {
+      "n_estimators": 3008,
+      "min_samples_leaf": 3,
+      "bootstrap": false,
+      "criterion": "entropy",
+      "class_weight": "balanced",
+      "random_state": 42
+    }
+  },
+  {
+    "name": "RANGER_1978_CLASS",
+    "class": "sklearn.ensemble.ExtraTreesClassifier",
+    "params": {
+      "n_estimators": 568,
+      "min_samples_leaf": 1,
+      "bootstrap": true,
+      "criterion": "entropy",
+      "class_weight": "balanced",
+      "random_state": 42
+    }
+  },
+  {
+    "name": "GLMNET_1171_CLASS",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "penalty": "elasticnet",
+      "solver": "saga",
+      "l1_ratio": 0.72973,
+      "C": 376.36,
+      "max_iter": 1000,
+      "class_weight": "balanced",
+      "random_state": 42
+    }
+  },
+  {
+    "name": "GLMNET_1337_CLASS",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "penalty": "elasticnet",
+      "solver": "saga",
+      "l1_ratio": 0.533829,
+      "C": 414.07,
+      "max_iter": 1000,
+      "class_weight": "balanced",
+      "random_state": 42
+    }
+  },
+  {
+    "name": "GLMNET_1960_CLASS",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {
+      "penalty": "elasticnet",
+      "solver": "saga",
+      "l1_ratio": 0.679453,
+      "C": 320.3,
+      "max_iter": 1000,
+      "class_weight": "balanced",
+      "random_state": 42
+    }
+  },
+  {
+    "name": "GBM_1101_CLASS",
+    "class": "sklearn.ensemble.GradientBoostingClassifier",
+    "params": {
+      "n_estimators": 3192,
+      "max_depth": 5,
+      "min_samples_leaf": 16,
+      "learning_rate": 0.011522,
+      "subsample": 0.33942,
+      "random_state": 42
+    }
+  },
+  {
+    "name": "GBM_1272_CLASS",
+    "class": "sklearn.ensemble.GradientBoostingClassifier",
+    "params": {
+      "n_estimators": 8039,
+      "max_depth": 5,
+      "min_samples_leaf": 3,
+      "learning_rate": 0.005549,
+      "subsample": 0.814662,
+      "random_state": 42
+    }
+  },
+  {
+    "name": "GBM_1399_CLASS",
+    "class": "sklearn.ensemble.GradientBoostingClassifier",
+    "params": {
+      "n_estimators": 9751,
+      "max_depth": 5,
+      "min_samples_leaf": 3,
+      "learning_rate": 0.003642,
+      "subsample": 0.735056,
+      "random_state": 42
+    }
+  },
+  {
+    "name": "cnae-9_best_auc_MLP",
+    "class": "sklearn.neural_network.MLPClassifier",
+    "params": {
+      "activation": "relu",
+      "alpha": 0.001,
+      "batch_size": "auto",
+      "beta_1": 0.9,
+      "beta_2": 0.999,
+      "early_stopping": false,
+      "epsilon": 1e-08,
+      "hidden_layer_sizes": [100, 100, 100],
+      "learning_rate": "constant",
+      "learning_rate_init": 0.001,
+      "max_iter": 500,
+      "momentum": 0.9,
+      "nesterovs_momentum": true,
+      "power_t": 0.5,
+      "shuffle": true,
+      "solver": "adam",
+      "tol": 0.0001,
+      "validation_fraction": 0.1,
+      "warm_start": false,
+      "random_state": 42
+    }
+  },
+  {
+    "name": "credit-approval_best_auc",
+    "class": "sklearn.ensemble.HistGradientBoostingClassifier",
+    "params": {
+      "l2_regularization": 100.0,
+      "learning_rate": 0.1,
+      "loss": "log_loss",
+      "max_bins": 8,
+      "max_depth": null,
+      "max_iter": 500,
+      "max_leaf_nodes": 128,
+      "min_samples_leaf": 38,
+      "scoring": null,
+      "tol": 1e-07,
+      "validation_fraction": 0.1,
+      "verbose": 0,
+      "class_weight": "balanced",
+      "random_state": 42
+    }
+  },
+  {
+    "name": "wilt_best_auc_MLP",
+    "class": "sklearn.neural_network.MLPClassifier",
+    "params": {
+      "verbose": false,
+      "activation": "relu",
+      "alpha": 0.0001,
+      "batch_size": "auto",
+      "beta_1": 0.9,
+      "beta_2": 0.999,
+      "early_stopping": false,
+      "epsilon": 1e-08,
+      "hidden_layer_sizes": [100],
+      "learning_rate": "constant",
+      "learning_rate_init": 0.001,
+      "max_iter": 200,
+      "momentum": 0.9,
+      "n_iter_no_change": 10,
+      "nesterovs_momentum": true,
+      "power_t": 0.5,
+      "shuffle": true,
+      "solver": "adam",
+      "tol": 0.0001,
+      "validation_fraction": 0.1,
+      "warm_start": false,
+      "random_state": 42
+    }
+  },
+  {
+    "name": "churn_best_auc_HistGB",
+    "class": "sklearn.ensemble.HistGradientBoostingClassifier",
+    "params": {
+      "l2_regularization": 1e-05,
+      "learning_rate": 0.1,
+      "loss": "log_loss",
+      "max_bins": 32,
+      "max_depth": 10,
+      "max_iter": 350,
+      "max_leaf_nodes": 8,
+      "min_samples_leaf": 2,
+      "scoring": null,
+      "tol": 1e-07,
+      "validation_fraction": 0.2,
+      "verbose": 0,
+      "class_weight": "balanced",
+      "random_state": 42
+    }
+  },
+  {
+    "name": "NaiveBayes_Gaussian_tabarena",
+    "class": "sklearn.naive_bayes.GaussianNB",
+    "params": {
+      "var_smoothing": 1e-9
+    }
+  },
+  {
+    "name": "RF_tabarena_balanced",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params": {
+      "n_estimators": 200,
+      "criterion": "gini",
+      "max_features": "sqrt",
+      "min_samples_leaf": 2,
+      "bootstrap": true,
+      "oob_score": true,
+      "n_jobs": -1,
+      "class_weight": "balanced",
+      "random_state": 42
+    }
+  },
+  {
+    "name": "RF_tabarena_Entropy_Deep",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params": {
+      "n_estimators": 300,
+      "criterion": "entropy",
+      "max_depth": null,
+      "min_samples_split": 4,
+      "bootstrap": true,
+      "n_jobs": -1,
+      "class_weight": "balanced_subsample",
+      "random_state": 42
+    }
+  },
+  {
+    "name": "KNN_Manhattan_Uniform_tabaraena",
+    "class": "sklearn.neighbors.KNeighborsClassifier",
+    "params": {
+      "n_neighbors": 15,
+      "weights": "uniform",
+      "algorithm": "auto",
+      "p": 1,
+      "n_jobs": -1
+    }
+  },
+  {
+    "name": "KNN_Local_Distance_tabaraena",
+    "class": "sklearn.neighbors.KNeighborsClassifier",
+    "params": {
+      "n_neighbors": 5,
+      "weights": "distance",
+      "algorithm": "auto",
+      "p": 2,
+      "n_jobs": -1
+    }
+  }
+]

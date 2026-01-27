@@ -1,0 +1,17 @@
+[
+  {
+    "name": "logreg_l2",
+    "class": "sklearn.linear_model.LogisticRegression",
+    "params": {"C": 1.0, "penalty": "l2", "solver": "liblinear"}
+  },
+  {
+    "name": "rf_100",
+    "class": "sklearn.ensemble.RandomForestClassifier",
+    "params": {"n_estimators": 100, "max_depth": 10}
+  },
+  {
+    "name": "lightgbm_150",
+    "class": "lightgbm.LGBMClassifier",
+    "params": {"n_estimators": 150}
+  }
+]
